@@ -123,22 +123,22 @@ scene.setBackgroundImage(img`
     `)
 tiles.setCurrentTilemap(tilemap`livello1`)
 let mySprite = sprites.create(img`
-    4 4 4 . . 4 4 4 4 4 . . . . . . 
-    4 5 5 4 4 5 5 5 5 5 4 4 . . . . 
-    b 4 5 5 1 5 1 1 1 5 5 5 4 . . . 
-    . b 5 5 5 5 1 1 5 5 1 1 5 4 . . 
-    . b d 5 5 5 5 5 5 5 5 1 1 5 4 . 
-    b 4 5 5 5 5 5 5 5 5 5 5 1 5 4 . 
-    c d 5 5 5 5 5 5 5 5 5 5 5 5 5 4 
-    c d 4 5 5 5 5 5 5 5 5 5 5 1 5 4 
-    c 4 5 5 5 d 5 5 5 5 5 5 5 5 5 4 
-    c 4 d 5 4 5 d 5 5 5 5 5 5 5 5 4 
-    . c 4 5 5 5 5 d d d 5 5 5 5 5 b 
-    . c 4 d 5 4 5 d 4 4 d 5 5 5 4 c 
-    . . c 4 4 d 4 4 4 4 4 d d 5 d c 
-    . . . c 4 4 4 4 4 4 4 4 5 5 5 4 
-    . . . . c c b 4 4 4 b b 4 5 4 4 
-    . . . . . . c c c c c c b b 4 . 
+    . f f f . f f f f . f f f . 
+    f f f f f e e e e f f f f f 
+    f f e e b e e e e b e e e f 
+    f f e e 3 e e e e 3 c e f f 
+    . f 3 3 e e e e c c 3 3 f . 
+    . f e e e e d d c c c c f . 
+    . f e e e d d d d c c e f . 
+    . f e e b f d d f b e e f . 
+    . f e d 1 f d d f 1 d e f . 
+    . . f f d d d d d d f f . . 
+    . . e f e d d d d e f e . . 
+    . e d f b 3 3 3 3 b f d e . 
+    . d d f 3 3 3 3 3 3 c d d . 
+    . d d f 6 6 6 6 6 6 f d d . 
+    . . . . 5 5 6 6 5 5 . . . . 
+    . . . . 1 1 . . 1 1 . . . . 
     `, SpriteKind.Player)
 controller.moveSprite(mySprite)
 scene.cameraFollowSprite(mySprite)
